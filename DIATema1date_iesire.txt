@@ -1,0 +1,185 @@
+Solutia numarul 1
+0: 5 4 rosu 
+2: 2 2 galben 
+2: 3 0 
+1: 7 3 albastru 
+2: 1 0 
+1: 4 3 rosu 
+
+0: 5 5 nedefinita 
+2: 2 1 galben 
+2: 3 0 
+1: 7 3 albastru 
+2: 1 0 
+1: 4 3 rosu 
+
+0: 5 5 nedefinita 
+2: 2 2 verde 
+2: 3 0 
+1: 7 2 albastru 
+2: 1 0 
+1: 4 3 rosu 
+
+0: 5 5 nedefinita 
+2: 2 2 verde 
+2: 3 0 
+1: 7 1 albastru 
+2: 1 0 
+1: 4 4 mov 
+
+0: 5 0 
+1: 2 2 verde 
+2: 3 0 
+1: 7 6 nedefinita 
+2: 1 0 
+1: 4 4 mov 
+
+0: 5 0 
+1: 2 2 verde 
+2: 3 0 
+1: 7 7 nedefinita 
+2: 1 0 
+1: 4 3 mov 
+ 
+################# 
+
+
+Solutia numarul 2
+0: 5 4 rosu 
+2: 2 2 galben 
+2: 3 0 
+1: 7 3 albastru 
+2: 1 0 
+1: 4 3 rosu 
+
+0: 5 5 nedefinita 
+2: 2 1 galben 
+2: 3 0 
+1: 7 3 albastru 
+2: 1 0 
+1: 4 3 rosu 
+
+0: 5 5 nedefinita 
+2: 2 1 galben 
+2: 3 0 
+1: 7 2 albastru 
+2: 1 0 
+1: 4 4 mov 
+
+0: 5 5 nedefinita 
+2: 2 2 verde 
+2: 3 0 
+1: 7 1 albastru 
+2: 1 0 
+1: 4 4 mov 
+
+0: 5 0 
+1: 2 2 verde 
+2: 3 0 
+1: 7 6 nedefinita 
+2: 1 0 
+1: 4 4 mov 
+
+0: 5 0 
+1: 2 2 verde 
+2: 3 0 
+1: 7 7 nedefinita 
+2: 1 0 
+1: 4 3 mov 
+ 
+################# 
+
+
+Solutia numarul 3
+0: 5 4 rosu 
+2: 2 2 galben 
+2: 3 0 
+1: 7 3 albastru 
+2: 1 0 
+1: 4 3 rosu 
+
+0: 5 4 rosu 
+2: 2 1 galben 
+2: 3 0 
+1: 7 3 albastru 
+2: 1 0 
+1: 4 4 nedefinita 
+
+0: 5 5 mov 
+2: 2 1 galben 
+2: 3 0 
+1: 7 2 albastru 
+2: 1 0 
+1: 4 4 nedefinita 
+
+0: 5 5 mov 
+2: 2 2 verde 
+2: 3 0 
+1: 7 1 albastru 
+2: 1 0 
+1: 4 4 nedefinita 
+
+0: 5 5 mov 
+2: 2 2 verde 
+2: 3 0 
+1: 7 5 nedefinita 
+2: 1 0 
+1: 4 0 
+
+0: 5 3 mov 
+2: 2 2 verde 
+2: 3 0 
+1: 7 7 nedefinita 
+2: 1 0 
+1: 4 0 
+ 
+################# 
+
+
+Solutia numarul 4
+0: 5 4 rosu 
+2: 2 2 galben 
+2: 3 0 
+1: 7 3 albastru 
+2: 1 0 
+1: 4 3 rosu 
+
+0: 5 4 rosu 
+2: 2 1 galben 
+2: 3 0 
+1: 7 3 albastru 
+2: 1 0 
+1: 4 4 nedefinita 
+
+0: 5 4 rosu 
+2: 2 2 verde 
+2: 3 0 
+1: 7 2 albastru 
+2: 1 0 
+1: 4 4 nedefinita 
+
+0: 5 5 mov 
+2: 2 2 verde 
+2: 3 0 
+1: 7 1 albastru 
+2: 1 0 
+1: 4 4 nedefinita 
+
+0: 5 5 mov 
+2: 2 2 verde 
+2: 3 0 
+1: 7 5 nedefinita 
+2: 1 0 
+1: 4 0 
+
+0: 5 3 mov 
+2: 2 2 verde 
+2: 3 0 
+1: 7 7 nedefinita 
+2: 1 0 
+1: 4 0 
+ 
+################# 
+
+
+Executia programului a durat: 269 ms
