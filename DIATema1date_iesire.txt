@@ -1,4 +1,4 @@
-Solutia numarul 1
+Solutia 1
 0: 5 4 rosu 
 2: 2 2 galben 
 2: 3 0 
@@ -41,10 +41,9 @@ Solutia numarul 1
 2: 1 0 
 1: 4 3 mov 
  
-################# 
+----------------------- 
 
-
-Solutia numarul 2
+Solutia 2
 0: 5 4 rosu 
 2: 2 2 galben 
 2: 3 0 
@@ -87,10 +86,9 @@ Solutia numarul 2
 2: 1 0 
 1: 4 3 mov 
  
-################# 
+----------------------- 
 
-
-Solutia numarul 3
+Solutia 3
 0: 5 4 rosu 
 2: 2 2 galben 
 2: 3 0 
@@ -133,10 +131,9 @@ Solutia numarul 3
 2: 1 0 
 1: 4 0 
  
-################# 
+----------------------- 
 
-
-Solutia numarul 4
+Solutia 4
 0: 5 4 rosu 
 2: 2 2 galben 
 2: 3 0 
@@ -179,7 +176,7 @@ Solutia numarul 4
 2: 1 0 
 1: 4 0 
  
-################# 
+----------------------- 
 
-
-Executia programului a durat: 269 ms
+ 
+Executia programului a durat: 177 ms!
