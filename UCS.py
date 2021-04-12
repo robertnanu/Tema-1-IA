@@ -202,45 +202,54 @@ gr=Graph(noduri, m, mp, start, scopuri)
 gr = Graph(start, scop , combinatieCulori)
 
 nrSolutiiCautate = 4
-continua = True
+# va avea valoarea False in momentul in care se vor gasi nrSolutiiCautate solutii
+ok = True
 
 # este asemanator BF, deoarece avem cost 1 pe fiecare mutare (BFS este UCS cu costuri de 1)
 def uniform_cost(gr):
 
-    global nrSolutiiCautate, lungimeasemanare, lungimesolutie, continua
-    # in coada vom avea doar noduri de tip NodParcurgere (nodurile din arborele de parcurgere)
-    c = [NodParcurgere(start, None)]
-      # variabila pe care o setez la false cand consider ca s-au afisat suficiente solutii
-    lungimesolutie = 0
+    global nrSolutiiCautate, lengthCorect, lengthSol, ok
+    
+    lengthSol = 0
 
-    # face len(scop)
-    for i in scop:
-        lungimesolutie += 1
+    coada = [NodParcurgere(start, None)]
+
+    # facem len(scop)
+    lengthSol = len(scop)
 
     # cauta fiecare element din scop pentru a verifica daca exista in starea mea actuala
-    while (len(c) > 0 and continua):
-        lungimeasemanare = 0
-        nodCurent = c.pop(0)
-        # cautam in toate elementele introduse j scopuri
-        for i in  nodCurent.info:
-            for j in  scop:
-                if i[1] != 0:
-                    if i[1] == j[0] and i[2] == j[1]:
-                        lungimeasemanare += 1
+    while (len(coada) > 0 and ok):
+        lengthCorect = 0
 
-        if lungimeasemanare == lungimesolutie:
-            g.write("Solutia numarul " + str(4 - nrSolutiiCautate + 1))
+        nodCurent = coada.pop(0)
+        
+        # verificam fiecare nodCurent cu toate solutiile cerute in scop
+        for x in  nodCurent.info:
+            for y in  scop:
+                if x[1] != 0:
+                    if x[1] == y[0] and x[2] == y[1]:
+                        lengthCorect += 1
+
+        # verific daca am gasit vreun nod cu cerintele din scop
+        if lengthCorect == lengthSol:
+            # afisez a cata solutie generata este
+            g.write("Solutia " + str(4 - nrSolutiiCautate + 1))
+
+            # afisez 
             nodCurent.afisDrum()
-            nrSolutiiCautate -= 1
-            g.write(" \n################# \n\n\n")
 
-        if nrSolutiiCautate == 0:
-            continua = False
+            # scad numarul de solutii cerute
+            nrSolutiiCautate -= 1
+
+            g.write(" \n----------------------- \n\n")
+
+        if not(nrSolutiiCautate):
+            ok = False
 
         lSuccesori = gr.genereazaSuccesori(nodCurent)
 
         # adauga in coada ce a descoperit nou
-        c.extend(lSuccesori)
+        coada.extend(lSuccesori)
 
 g = open("D:\IA\Tema1\date_iesire.txt", "w")
 
@@ -252,7 +261,7 @@ time2 = time.time()
 
 durata = round(1000 * (time2 - time1))
 
-g.write("Executia programului a durat: " + str(durata) + " ms\n")
+g.write(" \nExecutia programului a durat: " + str(durata) + " ms!\n")
 #g.write(str(psutil.virtual_memory()))
 
 g.close()
